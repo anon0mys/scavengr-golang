@@ -1,8 +1,10 @@
 package main
 
-func main() {
-  app := Api{}
-  app.Initialize()
+var api Api
 
-  app.Run()
+func main() {
+  api = Api{}
+  api.Initialize()
+
+  api.Run()
 }
