@@ -32,7 +32,7 @@ func TestEmptyIndex(t *testing.T) {
 
   checkResponseCode(t, http.StatusOK, response.Code)
 
-  if body := response.Body.String(); body != "[]" {
+  if body := response.Body.String(); body != "null" {
     t.Errorf("Expected an empty array. Got %s", body)
   }
 }
